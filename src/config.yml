@@ -1,0 +1,61 @@
+# ------------------
+# Config.yml File for BountifulEvents
+# ------------------
+
+# More Events will be added soon...
+# If you don't want send a subtitle, title or so, set the field to '&0'
+
+Options:
+  Title:
+    FadeIn: 10
+    Stay: 30
+    FadeOut: 10
+  Messages:
+    Prefix: '&8[&7Bountiful&fEvents&8] '
+    ToggleOn: '&fTitles, Subtitles and Actionbar has been &7enabled&f.'
+    ToggleOff: '&fTitles, Subtitles and Actionbar has been &7disabled&f.'
+    Reload: '&fThe Config File has been reloaded in &7%MS%&f.'
+    NoPermission: '&fYou don''t have the Permission &7%PERM% &ffor this command.'
+
+Events:
+  PlayerJoinEvent:
+    Own:
+      Title: '&6Welcome %PLAYER%'
+      Subtitle: '&ato my Server!'
+      Actionbar: '&0'
+    Global:
+      Title: '&0'
+      Subtitle: '&0'
+      Actionbar: '&b%PLAYER% &ajoined the game.'
+  PlayerQuitEvent:
+    Global:
+      Title: '&0'
+      Subtitle: '&0'
+      Actionbar: '&b%PLAYER% &cleft the game.'
+  PlayerDeathEvent:
+    Own:
+      Title: '&0'
+      Subtitle: '&0'
+      Actionbar: '&cYou died.'
+    Global:
+      Title: '&0'
+      Subtitle: '&0'
+      Actionbar: '&b%PLAYER% &edied.'
+  BlockPlaceEvent:
+    Own:
+      Title: '&0'
+      Subtitle: '&aYou placed a &b%BLOCK% &aBlock.'
+      Actionbar: '&0'
+    Global:
+      Title: '&0'
+      Subtitle: '&0'
+      Actionbar: '&0'
+  BlockBreakEvent:
+    Own:
+      Title: '&0'
+      Subtitle: '&cYou destroyed a &b%BLOCK% &cBlock.'
+      Actionbar: '&0'
+    Global:
+      Title: '&0'
+      Subtitle: '&0'
+      Actionbar: '&0'

@@ -1,0 +1,10 @@
+name: BountifulEvents
+version: 1.0.0
+softdepend: [BountifulAPI]
+author: FlareReturns
+main: io.github.flarereturns.bountifulevents.Main
+commands:
+  bountifulevents:
+    description: BountifulEvents Main Command
+    usage: /be [Toggle | Reload]
+    aliases: [be]
