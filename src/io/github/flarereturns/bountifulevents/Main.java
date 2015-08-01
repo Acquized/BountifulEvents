@@ -17,7 +17,7 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         instance = this;
         cfg = new Configuration();
-        //checkDepend();
+        checkDepend();
         getCfg().setupConfig();
         registerListeners();
         registerCommands();
