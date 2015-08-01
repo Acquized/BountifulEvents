@@ -59,3 +59,21 @@ Events:
       Title: '&0'
       Subtitle: '&0'
       Actionbar: '&0'
+  PlayerAchievementAwardedEvent:
+    Own:
+      Title: '&aEarned Achievment'
+      Subtitle: '&5%ACHIEVMENT%'
+      Actionbar: '&0'
+    Global:
+      Title: '&0'
+      Subtitle: '&0'
+      Actionbar: '&b%PLAYER% &agot the Achievment &5%ACHIEVMENT%&a!'
+  PlayerFishEvent:
+    Own:
+      Title: '&0'
+      Subtitle: '&0'
+      Actionbar: '&aAnd its a... &b%TYPE%'
+    Global:
+      Title: '&0'
+      Subtitle: '&0'
+      Actionbar: '&0'

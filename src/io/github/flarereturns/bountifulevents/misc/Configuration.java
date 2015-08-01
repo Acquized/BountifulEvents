@@ -33,6 +33,12 @@ public class Configuration {
     public String breakTitleOwn;
     public String breakTitleGlobal;
 
+    public String achievTitleOwn;
+    public String achievTitleGlobal;
+
+    public String fishTitleOwn;
+    public String fishTitleGlobal;
+
     // SUBTITLE
     public String joinSubtitleOwn;
     public String joinSubtitleGlobal;
@@ -48,6 +54,12 @@ public class Configuration {
     public String breakSubtitleOwn;
     public String breakSubtitleGlobal;
 
+    public String achievSubtitleOwn;
+    public String achievSubtitleGlobal;
+
+    public String fishSubtitleOwn;
+    public String fishSubtitleGlobal;
+
     // ACTIONBAR
     public String joinActionbarOwn;
     public String joinActionbarGlobal;
@@ -62,6 +74,12 @@ public class Configuration {
 
     public String breakActionbarOwn;
     public String breakActionbarGlobal;
+
+    public String achievActionbarOwn;
+    public String achievActionbarGlobal;
+
+    public String fishActionbarOwn;
+    public String fishActionbarGlobal;
 
     public void setupConfig() {
         // Load Config [HIGHEST PRIORITY]
@@ -108,6 +126,18 @@ public class Configuration {
         breakSubtitleGlobal = ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("Events.BlockBreakEvent.Global.Subtitle"));
         breakActionbarOwn = ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("Events.BlockBreakEvent.Own.Actionbar"));
         breakActionbarGlobal = ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("Events.BlockBreakEvent.Global.Actionbar"));
+        achievTitleOwn = ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("Events.PlayerAchievementAwardedEvent.Own.Title"));
+        achievTitleGlobal = ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("Events.PlayerAchievementAwardedEvent.Global.Title"));
+        achievSubtitleOwn = ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("Events.PlayerAchievementAwardedEvent.Own.Subtitle"));
+        achievSubtitleGlobal = ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("Events.PlayerAchievementAwardedEvent.Global.Subtitle"));
+        achievActionbarOwn = ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("Events.PlayerAchievementAwardedEvent.Own.Actionbar"));
+        achievActionbarGlobal = ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("Events.PlayerAchievementAwardedEvent.Global.Actionbar"));
+        fishTitleOwn = ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("Events.PlayerFishEvent.Own.Title"));
+        fishTitleGlobal = ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("Events.PlayerFishEvent.Global.Title"));
+        fishSubtitleOwn = ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("Events.PlayerFishEvent.Own.Subtitle"));
+        fishSubtitleGlobal = ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("Events.PlayerFishEvent.Global.Subtitle"));
+        fishActionbarOwn = ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("Events.PlayerFishEvent.Own.Actionbar"));
+        fishActionbarGlobal = ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("Events.PlayerFishEvent.Global.Actionbar"));
 
         // Load Metrics [LOWEST PRIORITY]
         try {

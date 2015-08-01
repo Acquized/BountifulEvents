@@ -34,6 +34,7 @@ public class BountifulEventsCommand implements CommandExecutor {
                     if(p.hasPermission("bountifulevents.reload")) {
                         long ms = System.currentTimeMillis();
                         Main.getCfg().setupConfig();
+                        // FIX THIS
                         long milis = System.currentTimeMillis() - ms;
                         p.sendMessage(Main.pr + Main.getCfg().reloadMsg.replaceAll("%MS%", milis + "ms"));
                         return true;

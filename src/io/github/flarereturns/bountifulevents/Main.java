@@ -38,6 +38,8 @@ public class Main extends JavaPlugin {
         pm.registerEvents(new Death(), this);
         pm.registerEvents(new Place(), this);
         pm.registerEvents(new Break(), this);
+        pm.registerEvents(new Achievment(), this);
+        pm.registerEvents(new Fish(), this);
     }
 
     private void registerCommands() {
